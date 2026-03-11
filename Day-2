@@ -1,0 +1,216 @@
+#WAP to accept any one digit and check pos,neg and zero
+no = int(input("Enter any one number" ))
+
+if no>0:
+    print("no is positive: ")
+
+if no<0:
+    print("no is neg")
+
+if no == 0:
+    print("no is zero")
+
+
+#WAP to ccept days and check working days and weekend
+print("The Days in a week are: ")
+print(" 1. Monday, 2. Tuesday, 3. Wednesday, 4. Thursday, 5. Friday, 6. Saturday, 7. Sunday ")
+
+day = int(input("Input the day in number with query: "))
+
+if day == 6 or day == 7:
+    print("The day is a Weekend. \n Enjoy your holiday!!")
+else:
+    print("The day is a Weekday.")
+
+
+#WAP to accept three paper marks and calculate total marks, percentage and check if percantage is greater than or equal
+#to 60 then he/she is eleigible for placement.
+print("Enter marks of three papers out of 50 marks.")
+p1 = int(input("Marks of first paper: "))
+p2 = int(input("Marks of second paper: "))
+p3 = int(input("Marks of first paper: "))
+
+tot = p1 + p2 + p3
+per = (p1 + p2 + p3) / 150.0
+per = per * 100.0
+print("The total is: ", tot,"/150")
+print("Percentage is: ", per,"%")
+
+if per>=60:
+    print("You are eligible for placement.")
+else:
+    print("You are not eligible for placement.")
+
+
+#WAP to accept 5 number in 5 dofferent variable and  check maximum value and print using simple if
+p1 = int(input("Enter the value of p1: "))
+p2 = int(input("Enter the value of p2: "))
+p3 = int(input("Enter the value of p3: "))
+p4 = int(input("Enter the value of p4: "))
+p5 = int(input("Enter the value of p5: "))
+
+if p1 > p2 and p1 > p3 and p1 > p4 and p1 > p5:
+    print("Greatest is", p1)
+elif p2 > p1 and p2 > p3 and p2 > p4 and p2 > p5:
+    print("Greatest is", p2)
+elif p3 > p1 and p3 > p2 and p3 > p4 and p3 > p5:
+    print("Greatest is", p3)
+elif p4 > p1 and p4 > p2 and p4 > p3 and p4 > p5:
+    print("Greatest is", p4)
+else:
+    print("Greatest is", p5)
+
+
+#WAP accept 3 num and check max number
+x = int(input("Enter the value of n1: "))
+y = int(input("Enter the value of n2: "))
+z = int(input("Enter the value of n3: "))
+
+if x>y:
+    if x>z:
+        print("x is maximum")
+    else:
+        print("z is maximum")
+else:
+    if y>z:
+        print("y is maximum")
+    else:
+        print("z is maximum")
+
+
+#WAP to if percentage is greater than 90 si assugb grade A if percentage greater than 80 assign grade 'B'
+#and if percentage  is greater than 60 so assign grade c
+per = float(input("Enter percentage: "))
+
+if per > 90:
+    print("Grade A")
+elif per > 80:
+    print("Grade B")
+elif per > 60:
+    print("Grade C")
+else:
+    print("Grade D")
+
+
+#ATM WITHDRAWAL SYSTEM
+balance = float(input("Enter account balance: "))
+withdraw = float(input("Enter withdrawal amount: "))
+
+if withdraw <= balance:
+    print("Transaction successful")
+else:
+    print("Insufficient balance")
+
+
+s= "jelp4code is  programming for practcing"
+print(s.find("jelp4code"))
+print(s.find("python"))
+print(s.find("programming"))
+
+
+s="Python is a High level programming Language"
+print(s.lower())
+print(s.upper())
+print(s.swapcase())
+print(s.title())
+print(s.capitalize())
+
+
+print('Subject Marks:')
+phy = 50
+chem = 60
+math = 70
+print("physics = {} chemistry = {} math= {}".format(phy, chem, math))
+print("physics = {0} chemistry = {1} math= {2}".format(phy, chem, math))
+print("physics = {x} chemistry = {y} math= {z}".format(x=phy, y=chem, z=math))
+tot = phy + chem + math
+print("Total marks ", tot)
+print("Roll No=","7".zfill(4))
+
+
+print('yashkhadakkar9779'.isalnum())
+print('yashkhadakkar'.isalpha())
+print('9779f'.isdigit())
+print('sdsdsdsd'.islower())
+print(''.islower())
+
+
+mylist = ["prashant", "sachin", "rohit", "virat", "dhoni", 77, 88, 99, 100, "sandeep", 60.52]
+
+mylist.append('kshitij')
+mylist.append("kshitij_panday")
+print(mylist)
+mylist.insert(2, "panday")
+print(mylist)
+mylist.remove("panday")
+print(mylist)
+newList = mylist.copy()
+print(newList)
+
+
+crazylist =[['prashant', 'sachin', 'rohit'], [77, 88, 99], [100, 'sandeep', 60.52]]
+print(crazylist)
+print(crazylist[0][0])
+print(crazylist[0][1])
+print(crazylist[0][2])
+print(crazylist[1][0])
+print(crazylist[1][1])
+print(crazylist[1][2])
+print(crazylist[2][0])
+print(crazylist[2][1])
+print(crazylist[2][2])
+
+
+list1=["Kshitij","Panday"]
+print(list1*2)
+
+list2=[50,25.50]
+print(list1+list2)
+
+list1.remove("Panday")
+print(list1)
+
+list1.clear()
+print(list1)
+
+name="prashant"
+print(name)
+myname=list(name)
+print(myname)
+
+
+mylist1=[5,2,9,1,5,6]
+mylist1.sort()
+print(mylist1)
+
+mylist1.sort(reverse=True)
+print(mylist1)
+
+
+math = 10
+print(id(math))
+math = 20
+print(id(math))
+
+
+physics = 10
+physics1=10
+print(id(physics))
+print(id(physics1))
+
+
+mylist=[44,22,77,0,9,88]
+mylist1=mylist
+print(id(mylist))
+print(id(mylist1))
+
+
+name='Kshitij'
+print('Z' in name)
+print('K' in name)
+print('Z' not in name)
+
+
+import datetime
+date = datetime.datetime.now()
+print("It's now:{%d/%m/%Y %H:%M:%S}".format(date))
