@@ -1,0 +1,121 @@
+# 1. while loop
+# i =0
+# while i<=5:
+#     print(i)
+#     i += 1
+# usrn = " "
+# pswd = " "
+# i=0
+# while usrn != "Yash" and pswd != "12345":
+#     usrn = input("Enter Username: ")
+#     pswd = input("Enter Password: ")
+#     i += 1
+#
+# print("Login Successful")
+
+# cart = [10,20,200,300,800,60,700]
+# for i in cart:
+#     if i>400:
+#         print("This is my purchased cart item")
+#         continue
+#     print(i)
+
+
+# 2. dictionary
+# mydict = {
+#     101 : "prashant",
+#     102 : "ashish",
+#     "103" : "mohini",
+#     "104" : "trivani",
+#     101 : "ashish",
+#     104 : "ashish"
+# }
+# print(mydict)
+
+#USING KEY TO PRINT VALES
+# a = mydict[102]
+# print(a)
+#changing orignal value using key
+# mydict[102]="peter"
+# print(mydict)
+
+#print key
+# for x in mydict:
+#     print(x)
+
+#printing values
+#for x in mydict.values():
+#    print(x)
+
+# for x,y in mydict.item():
+#     print(x,y)
+
+#if we want to represent binary data like images, videos
+# mydict = {
+#     101 : "prashant",
+#     "proffesional":"developer",
+#     "empid":1001
+# }
+# mydict.pop(101)
+
+
+#check if string is palindrome
+#racecar
+#
+
+# #check anagram
+# na = []
+# nb = []
+# n1 = input("enter first word: ")
+# na.append(n1)
+# n2 = input("Enter second word: ")
+# nb.append(n2)
+# if na == nb:
+#     print("Both words are anagrams of each other")
+# else:
+#     print("Both words are not anagrams of each other")
+
+
+
+#nested for loop
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i,end=" ")
+#     print()
+
+# n = int(input("Enter the number of rows: "))
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(chr(64+i),end=" ")
+#
+#
+# n = int(input("Enter the number of rows: "))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print(n+1,end=" ")
+#     print()
+
+# n = int(input("Enter the number of rows: "))
+# for i in range(1,n+1):
+#     for j in range(1,1+i):
+#         print(n+1,end=" ")
+#     print()
+
+# n=int(input("Enter number of students: "))
+# d = {}
+# for i in range(n):
+#     name=input("Enter Student Name: ")
+#     marks=input("Enter Students Marks: ")
+#     d[name]=marks
+# while True:
+#     name=input("Enter student name to get marks: ")
+#     marks=d.get(name,-1)
+#     if marks==-1:
+#         print("Student not found")
+#     else:
+#         print("The marks of",name,"are ",marks)
+#
+#     option=input("Do you want to find another students marks[Yes|No]")
+#     if option=="No":
+#         break
+# print("Thanks for using our application")
